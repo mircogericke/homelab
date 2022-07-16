@@ -1,0 +1,5 @@
+**/kubeconfig
+**/talosconfig
+**/*.asc
+**/*.crt
+**/*.key
