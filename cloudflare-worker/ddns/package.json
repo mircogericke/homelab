@@ -1,0 +1,10 @@
+{
+  "name": "ddns",
+  "version": "1.0.0",
+  "description": "updates ip of configured dns A records to a given input",
+  "author": "Mirco Gericke",
+  "license": "MIT",
+  "devDependencies": {
+    "@cloudflare/workers-types": "^2.1.0"
+  }
+}
