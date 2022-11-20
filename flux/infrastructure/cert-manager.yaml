@@ -15,6 +15,7 @@ spec:
   chart:
     spec:
       chart: cert-manager
+      # Check Upgrade Guide: https://cert-manager.io/docs/installation/upgrading/
       version: '1.10.x'
       sourceRef:
         kind: HelmRepository
