@@ -1,8 +1,4 @@
 Required command line utilities:
-- kubectl
-- flux
-- gpg
-- git
 
 
 # Fluxcd Installation
@@ -13,27 +9,21 @@ Create a personal access token with the "repo" scope and unlimited durability in
 
 ## Define variables used during installation
 
-```bash
-export GITHUB_TOKEN=<your-token>
-export GITHUB_USER=<your-username>
+```powershell
+$env:GITHUB_TOKEN="<your-token>"
+$env:GITHUB_USER="mircogericke"
 ```
 
 ## Install flux
 
-```bash
-flux bootstrap github \
-	--owner=$GITHUB_USER \
-	--repository=homelab \
-	--branch=prod \
-	--path=./flux/clusters/production \
-	--cluster-domain="cluster.mircogericke.com" \
+```powershell
+flux bootstrap github `
+	--owner=$env:GITHUB_USER `
+	--repository=homelab `
+	--branch=prod `
+	--path=./flux/clusters/production `
+	--cluster-domain="cluster.mircogericke.com" `
 	--personal
-```
-
-## Clone the repository
-
-```bash
-git clone https://github.com/mircogericke/homelab.git
 ```
 
 # Mozilla SOPS Installation
@@ -60,9 +50,10 @@ gpg --list-secret-keys "${KEY_NAME}"
 
 
 export fingerprint under `sec   rsa4096 YYYY-MM-DD [SCEA]`:
-```
+```bash
 export KEY_FP=<fingerprint>
 gpg --export-secret-keys --armor "${KEY_FP}" > sops.asc
+gpg --export -armor "${KEY_FP}" > sops.pub
 
 kubectl create secret generic sops-gpg \
 --namespace=flux-system \
@@ -80,9 +71,43 @@ rm -r sops.asc
 
 ## Configure decryption
 
-```bash
-cd flux
-flux create source git my-secrets \
---url=https://github.com/my-org/my-secrets \
---branch=main
+add to infrastructure/apps kustomization specs in clusters/production (already present in repository)
+```yaml
+  decryption:
+    provider: sops
+    secretRef:
+      name: sops-gpg
 ```
+
+## (test) encrypt a secret
+
+create file test.yaml
+```yaml
+apiVersion: v1
+kind: Secret
+metadata:
+  name: test-secret
+stringData:
+  username: admin
+  password: admin
+```
+
+encrypt and check file contents:
+```bash
+sops -e -i test.yaml
+```
+
+# Automatic Image Update Setup
+
+
+
+==================================
+
+
+Components:
+- Flux + Github
+- local-path-storage (slow + fast)
+- Mittwald secret generator
+- cert-manager
+- contour (envoyproxy based ingress, to be replaced by envoy gateway)
+- authentik sso

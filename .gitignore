@@ -3,3 +3,4 @@
 **/*.asc
 **/*.crt
 **/*.key
+**/generated
