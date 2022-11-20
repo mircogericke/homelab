@@ -1,5 +1,4 @@
-﻿---
-kind: ConfigMap
+﻿kind: ConfigMap
 apiVersion: v1
 metadata:
   name: local-path-config
