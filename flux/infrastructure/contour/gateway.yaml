@@ -1,0 +1,48 @@
+﻿apiVersion: projectcontour.io/v1alpha1
+kind: ContourDeployment
+metadata:
+  name: contour-configuration
+  namespace: projectcontour
+spec:
+  contour:
+    replicas: 1
+  envoy:
+    networkPublishing:
+      type: NodePortService
+
+---
+
+apiVersion: gateway.networking.k8s.io/v1beta1
+kind: GatewayClass
+metadata:
+  name: contour
+spec:
+  controllerName: projectcontour.io/gateway-controller
+  parametersRef:
+    kind: ContourDeployment
+    group: projectcontour.io
+    namespace: projectcontour
+    name: contour-configuration
+
+---
+
+apiVersion: gateway.networking.k8s.io/v1beta1
+kind: Gateway
+metadata:
+  name: contour
+  namespace: projectcontour
+spec:
+  gatewayClassName: contour
+  listeners:
+  - name: http
+    protocol: HTTP
+    port: 80
+    allowedRoutes:
+      namespaces:
+        from: All
+  - name: https
+    protocol: HTTPS
+    port: 443
+    allowedRoutes:
+      namespaces:
+        from: All
