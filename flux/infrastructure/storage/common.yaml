@@ -1,14 +1,28 @@
 ﻿apiVersion: v1
 kind: Namespace
 metadata:
-  name: local-path-storage
+  name: local-path-storage-slow
 
 ---
 apiVersion: v1
 kind: ServiceAccount
 metadata:
   name: local-path-provisioner-service-account
-  namespace: local-path-storage
+  namespace: local-path-storage-slow
+
+
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: local-path-storage-fast
+
+---
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: local-path-provisioner-service-account
+  namespace: local-path-storage-fast
 
 ---
 apiVersion: rbac.authorization.k8s.io/v1
@@ -41,4 +55,7 @@ roleRef:
 subjects:
 - kind: ServiceAccount
   name: local-path-provisioner-service-account
-  namespace: local-path-storage
+  namespace: local-path-storage-slow
+- kind: ServiceAccount
+  name: local-path-provisioner-service-account
+  namespace: local-path-storage-fast

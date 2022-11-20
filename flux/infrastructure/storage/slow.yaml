@@ -1,9 +1,8 @@
-﻿---
-kind: ConfigMap
+﻿kind: ConfigMap
 apiVersion: v1
 metadata:
-  name: local-path-config-slow
-  namespace: local-path-storage
+  name: local-path-config
+  namespace: local-path-storage-slow
 data:
   config.json: |-
     {
@@ -37,8 +36,8 @@ data:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: local-path-provisioner-slow
-  namespace: local-path-storage
+  name: local-path-provisioner
+  namespace: local-path-storage-slow
 spec:
   replicas: 1
   selector:
@@ -74,7 +73,7 @@ spec:
       volumes:
         - name: config-volume
           configMap:
-            name: local-path-config-slow
+            name: local-path-config
 
 ---
 apiVersion: storage.k8s.io/v1

@@ -2,8 +2,8 @@
 kind: ConfigMap
 apiVersion: v1
 metadata:
-  name: local-path-config-fast
-  namespace: local-path-storage
+  name: local-path-config
+  namespace: local-path-storage-fast
 data:
   config.json: |-
     {
@@ -37,8 +37,8 @@ data:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: local-path-provisioner-fast
-  namespace: local-path-storage
+  name: local-path-provisioner
+  namespace: local-path-storage-fast
 spec:
   replicas: 1
   selector:
@@ -74,7 +74,7 @@ spec:
       volumes:
         - name: config-volume
           configMap:
-            name: local-path-config-fast
+            name: local-path-config
 
 ---
 apiVersion: storage.k8s.io/v1
