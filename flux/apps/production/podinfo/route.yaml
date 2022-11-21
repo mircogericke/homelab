@@ -2,6 +2,7 @@
 kind: HTTPRoute
 metadata:
   name: podinfo
+  namespace: default
 spec:
   rules:
   - backendRefs:

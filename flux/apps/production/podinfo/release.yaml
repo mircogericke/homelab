@@ -2,6 +2,7 @@
 kind: HelmRelease
 metadata:
   name: podinfo
+  namespace: default
 spec:
   interval: 1h
   chart:
