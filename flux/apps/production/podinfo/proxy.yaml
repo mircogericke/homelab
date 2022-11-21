@@ -1,0 +1,32 @@
+﻿apiVersion: cert-manager.io/v1
+kind: Certificate
+metadata:
+  name: certificate-podinfo
+  namespace: default
+spec:
+  commonName: podinfo.mircogericke.com
+  dnsNames:
+  - podinfo.mircogericke.com
+  issuerRef:
+    name: letsencrypt-prod
+    kind: ClusterIssuer
+  secretName: certificate-podinfo
+
+---
+
+apiVersion: projectcontour.io/v1
+kind: HTTPProxy
+metadata:
+  name: podinfo
+  namespace: default
+spec:
+  virtualhost:
+    fqdn: podinfo.mircogericke.com
+    tls:
+      secretName: certificate-podinfo
+  routes:
+    - conditions:
+      - prefix: /
+      services:
+        - name: podinfo
+          port: 9898
