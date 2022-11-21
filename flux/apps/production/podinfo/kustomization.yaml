@@ -3,5 +3,4 @@ kind: Kustomization
 resources:
 - repository.yaml
 - release.yaml
-- gateway.yaml
-- route.yaml
+- proxy.yaml
