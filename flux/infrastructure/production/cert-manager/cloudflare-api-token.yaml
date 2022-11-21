@@ -1,0 +1,39 @@
+﻿apiVersion: v1
+kind: Secret
+metadata:
+    name: cloudflare-api-token
+    namespace: cert-manager
+type: Opaque
+stringData:
+    api-token: ENC[AES256_GCM,data:KVh8y0+/VEv3VOAQl4a6KpUUBLU7oeIvVXSBp69facIqL6RUUgxUVQ==,iv:e+0O/+ccUXo9PLdVHb/5DBj9WGUs7nzruSmhGQgbkUI=,tag:/mtKzsSaVG8Dbj0alQXA2w==,type:str]
+sops:
+    kms: []
+    gcp_kms: []
+    azure_kv: []
+    hc_vault: []
+    age: []
+    lastmodified: "2022-11-21T17:45:16Z"
+    mac: ENC[AES256_GCM,data:rSs4ihrAdx+nOqKG0ICXmuopJ5SdyupHKVP7rZJY7WAgCTlF+h6vuEk9JKTK1sz1lc2E9n6w1s39Ml2nCSVcvZbeLwiPWoSgMw02/C8zX9nuhcs6UwWfxmKiIfGcb442fGQ5xzlKjIeTLbYgyHBdKGPoEXwP4YqZpD4d8tyFxKM=,iv:s4tfQkHA1ZCOxoD7/9FoMiDqWBDea3OgUmHx8nBd7mM=,tag:oWOuG0jgt/ngNviqHe8mew==,type:str]
+    pgp:
+        - created_at: "2022-11-21T17:45:16Z"
+          enc: |
+            -----BEGIN PGP MESSAGE-----
+
+            hQIMAxyFiOBVKqWBARAAnimizNTl/RJovQLdajRm0G8pJU+a86a8ogtiansfUe6q
+            GZQc31tSkGpkap7izL3bcMq2bXe39M87xWLI71d+ieSQM8r17v3+4qArA9jcDooU
+            ZNAC67v1uQFJJIGWOixdRBCZ+zG29Jw/O33BzkpzbzeYmoPY4wUswzC2ECfNJb4G
+            FSfrQbd8A1Ww9gWiOVnKzTYxIPaXIFTrWqQOAQyHpsISfHLtwR/y4hrqOn0of588
+            9rOYkwytaov5tM5WxLn3oRXJrK86X2afm3B8ub4QfeptvAs6yoqUgElQNdP1f9JB
+            xA1J39vmemLGpc+20jnStZbUXcYRP6mMojJ9FkSoUfUkIoa6u7lkyEjcxgGv8Xm0
+            nXnF4a2xOzDLwrPuR6KEDAS6snwxJ0cKq0EarX+HIlqDDhxlI+wkLUD9MFrA5BeE
+            i3OHyzK2DyM1pPH221qqOv/VhLSeZ52NUSY/ICwdkgA/M85GKwUcPfX3S1+8erBs
+            uuINNSzo3tJ2hyXDN5DdEGCr1nKetvaenCPjqhpdDs91T8bCMdZYYVS5uF1zgjFU
+            6qnFl/t/vyQ65c3ePc8v3Oxw/Z8VjV0bGS/qIKsN7ClLvxwi4YFsDJtcNA82wyIG
+            J1SyLPmmnUln9mYh7cxeEEVM7lkDBeG/BlKGwh1COxFIXC7CcDUvCgOo9HDRAVHS
+            XgGJG6AJguEK+YJsNIcq8j3m84mqc+p9mpaZRYRK4VUEgil6Y+MqV1cXcULd3RZ4
+            wqYsrRGT7BGXFhglZ1n6Hs4HTP+lrz7RWmv43RE1RH98Hg3MgGKEf4/SnNa8nwM=
+            =9f00
+            -----END PGP MESSAGE-----
+          fp: 4CE8E7F57DD4C58BBC65A48FECB2D6276795C8D9
+    encrypted_regex: ^(data|stringData)$
+    version: 3.7.3

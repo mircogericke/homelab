@@ -23,26 +23,3 @@ spec:
     group: projectcontour.io
     namespace: projectcontour
     name: contour-configuration
-
----
-
-apiVersion: gateway.networking.k8s.io/v1beta1
-kind: Gateway
-metadata:
-  name: contour
-  namespace: projectcontour
-spec:
-  gatewayClassName: contour
-  listeners:
-  - name: http
-    protocol: HTTP
-    port: 80
-    allowedRoutes:
-      namespaces:
-        from: All
-  - name: https
-    protocol: HTTPS
-    port: 443
-    allowedRoutes:
-      namespaces:
-        from: All
