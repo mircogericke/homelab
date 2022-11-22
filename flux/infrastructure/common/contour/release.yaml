@@ -21,5 +21,11 @@ spec:
         name: bitnami
         namespace: default
       interval: 1h
-      valuesFiles:
-      - values.yaml
+  values:
+    envoy:
+      useHostPort: false
+      service:
+        type: NodePort
+        nodePorts:
+          http: 80
+          https: 443
