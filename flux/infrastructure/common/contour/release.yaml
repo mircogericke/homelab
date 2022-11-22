@@ -23,6 +23,5 @@ spec:
       interval: 1h
   values:
     envoy:
-      useHostPort: false
       service:
         type: NodePort
