@@ -1,0 +1,3 @@
+﻿envoy:
+  service:
+    type: NodePort
