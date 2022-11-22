@@ -15,8 +15,8 @@ network:
   hostname: master-talos.lan.mircogericke.com
 cluster:
   allowSchedulingOnControlPlanes: true
-	network:
-		dnsDomain: cluster.mircogericke.com
+  network:
+    dnsDomain: cluster.mircogericke.com
 disks:
   - device: /dev/sdb
     partitions:
