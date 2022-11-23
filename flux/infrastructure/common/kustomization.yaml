@@ -5,4 +5,5 @@ resources:
 - storage
 - secret-generator
 - cert-manager
+- metallb
 - contour
