@@ -6,4 +6,4 @@ resources:
 - secret-generator
 - cert-manager
 - metallb
-
+- traefik
