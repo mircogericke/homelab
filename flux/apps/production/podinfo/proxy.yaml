@@ -14,19 +14,20 @@ spec:
 
 ---
 
-apiVersion: projectcontour.io/v1
-kind: HTTPProxy
+apiVersion: traefik.containo.us/v1alpha1
+kind: IngressRoute
 metadata:
   name: podinfo
   namespace: default
 spec:
-  virtualhost:
-    fqdn: podinfo.mircogericke.com
-    tls:
-      secretName: certificate-podinfo
+  entryPoints:
+  - web
+  - websecure
   routes:
-    - conditions:
-      - prefix: /
-      services:
-        - name: podinfo
-          port: 9898
+  - match: Host(`podinfo.mircogericke.com`)
+    kind: Rule
+    services:
+    - name: podinfo
+      port: 9898
+  tls:
+    secretName: certificate-podinfo
