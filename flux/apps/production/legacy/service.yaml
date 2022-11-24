@@ -1,0 +1,8 @@
+﻿apiVersion: v1
+kind: Service
+metadata:
+  name: legacy-server
+  namespace: default
+spec:
+  type: ExternalName
+  externalName: legacy.lan.mircogericke.com

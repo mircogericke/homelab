@@ -1,0 +1,18 @@
+﻿apiVersion: traefik.containo.us/v1alpha1
+kind: IngressRoute
+metadata:
+  name: legacy-server
+  namespace: default
+spec:
+  entryPoints:
+  - websecure
+  routes:
+  - match: HostRegexp(`nextdracool.com`, `[a-zA-Z0-9]+.nextdracool.com`)
+    kind: Rule
+    services:
+    - name: legacy-server
+      namespace: default
+      port: 443
+      serversTransport: legacy-server
+  tls:
+    secretName: certificate-legacy-server

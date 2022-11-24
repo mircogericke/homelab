@@ -1,0 +1,14 @@
+﻿apiVersion: cert-manager.io/v1
+kind: Certificate
+metadata:
+  name: certificate-legacy-server
+  namespace: default
+spec:
+  commonName: nextdracool.com
+  dnsNames:
+  - nextdracool.com
+  - "*.nextdracool.com"
+  issuerRef:
+    name: cluster-issuer-letsencrypt
+    kind: ClusterIssuer
+  secretName: certificate-legacy-server
