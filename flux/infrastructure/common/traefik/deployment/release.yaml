@@ -22,6 +22,8 @@ spec:
         namespace: traefik-system
       interval: 1h
   values:
+    kubernetesCRD:
+      allowExternalNameServices: true
     deployment:
       kind: DaemonSet
     ingressRoute:
