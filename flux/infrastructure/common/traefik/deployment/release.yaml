@@ -31,3 +31,6 @@ spec:
       websecure:
         http3:
           enabled: true
+    service:
+      spec:
+        loadBalancerIP: "10.0.10.0"
