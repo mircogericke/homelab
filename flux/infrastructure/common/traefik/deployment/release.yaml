@@ -22,11 +22,6 @@ spec:
         namespace: traefik-system
       interval: 1h
   values:
-    logs:
-      general:
-        level: DEBUG
-      access:
-        enabled: true
     providers:
       kubernetesCRD:
         allowExternalNameServices: true
