@@ -1,0 +1,30 @@
+﻿apiVersion: traefik.containo.us/v1alpha1
+kind: Middleware
+metadata:
+  name: redirect-to-https
+  namespace: traefik-system
+spec:
+  redirectScheme:
+    scheme: https
+    permanent: true
+
+---
+
+apiVersion: traefik.containo.us/v1alpha1
+kind: IngressRoute
+metadata:
+  name: http-to-https
+  namespace: traefik-system
+spec:
+  entryPoints:
+  - web
+  routes:
+    - kind: Rule
+      match: PathPrefix(`/`)
+      priority: 100
+      middlewares:
+      - name: redirect-to-https
+        namespace: traefik-system
+      services:
+      - kind: TraefikService
+        name: noop@internal
