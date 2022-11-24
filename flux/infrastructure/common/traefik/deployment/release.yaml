@@ -27,8 +27,9 @@ spec:
         level: DEBUG
       access:
         enabled: true
-    kubernetesCRD:
-      allowExternalNameServices: true
+    providers:
+      kubernetesCRD:
+        allowExternalNameServices: true
     deployment:
       kind: DaemonSet
     ingressRoute:
