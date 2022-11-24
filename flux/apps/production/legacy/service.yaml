@@ -6,3 +6,6 @@ metadata:
 spec:
   type: ExternalName
   externalName: legacy.lan.mircogericke.com
+  ports:
+  - port: 443
+    name: https
