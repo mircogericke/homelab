@@ -11,6 +11,8 @@ spec:
     kind: Rule
     services:
     - name: authentik
-      port: 80
+      namespace: apps-authentik
+      kind: Service
+      port: authentik
   tls:
     secretName: certificate-authentik
