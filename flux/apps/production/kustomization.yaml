@@ -3,4 +3,4 @@ kind: Kustomization
 resources:
 - ../common
 - legacy-server.yaml
-
+- authentik.yaml
