@@ -109,5 +109,5 @@ Components:
 - local-path-storage (slow + fast)
 - Mittwald secret generator
 - cert-manager
-- contour (envoyproxy based ingress, to be replaced by envoy gateway)
+- traefik ingress controller
 - authentik sso
