@@ -1,0 +1,19 @@
+﻿apiVersion: helm.toolkit.fluxcd.io/v2beta1
+kind: HelmRelease
+metadata:
+  name: authentik
+  namespace: apps-authentik
+spec:
+  interval: 1h
+  chart:
+    spec:
+      chart: authentik
+      version: '2022.11.x'
+      sourceRef:
+        kind: HelmRepository
+        name: authentik
+        namespace: apps-authentik
+      interval: 1h
+  valuesFrom:
+    - kind: Secret
+      name: authentik-values

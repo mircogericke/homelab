@@ -1,0 +1,16 @@
+﻿apiVersion: traefik.containo.us/v1alpha1
+kind: IngressRoute
+metadata:
+  name: authentik
+  namespace: apps-authentik
+spec:
+  entryPoints:
+  - websecure
+  routes:
+  - match: Host(`account.mircogericke.com`)
+    kind: Rule
+    services:
+    - name: authentik
+      port: 80
+  tls:
+    secretName: certificate-authentik

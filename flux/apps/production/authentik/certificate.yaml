@@ -1,0 +1,13 @@
+﻿apiVersion: cert-manager.io/v1
+kind: Certificate
+metadata:
+  name: certificate-authentik
+  namespace: apps-authentik
+spec:
+  commonName: account.mircogericke.com
+  dnsNames:
+  - account.mircogericke.com
+  issuerRef:
+    name: cluster-issuer-letsencrypt
+    kind: ClusterIssuer
+  secretName: certificate-authentik
