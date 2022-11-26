@@ -16,7 +16,6 @@ spec:
       valuesFiles:
       - values.yaml
   values:
-    host: podinfo.mircogericke.com
     replicaCount: 1
     resources:
       limits:
