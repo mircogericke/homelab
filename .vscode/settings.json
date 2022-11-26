@@ -1,0 +1,7 @@
+{
+	"material-icon-theme.files.associations": {
+		"kustomization.yaml": "tree",
+		"certificate.yaml": "lock",
+		"ingress.yaml": "razor",
+	}
+}
