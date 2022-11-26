@@ -82,4 +82,4 @@ metadata:
   name: local-path-fast
 provisioner: rancher.io/local-path-fast
 volumeBindingMode: WaitForFirstConsumer
-reclaimPolicy: Delete
+reclaimPolicy: Retain
