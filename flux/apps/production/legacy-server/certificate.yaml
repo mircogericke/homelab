@@ -2,7 +2,7 @@
 kind: Certificate
 metadata:
   name: certificate-legacy-server
-  namespace: default
+  namespace: apps-legacy-server
 spec:
   commonName: nextdracool.com
   dnsNames:

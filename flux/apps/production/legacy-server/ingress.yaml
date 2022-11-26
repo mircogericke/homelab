@@ -2,7 +2,7 @@
 kind: IngressRoute
 metadata:
   name: legacy-server
-  namespace: default
+  namespace: apps-legacy-server
 spec:
   entryPoints:
   - websecure
@@ -11,7 +11,7 @@ spec:
     kind: Rule
     services:
     - name: legacy-server
-      namespace: default
+      namespace: apps-legacy-server
       port: 443
       serversTransport: legacy-server
   tls:

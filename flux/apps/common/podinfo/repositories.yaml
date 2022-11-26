@@ -2,7 +2,7 @@
 kind: HelmRepository
 metadata:
   name: podinfo
-  namespace: default
+  namespace: apps-podinfo
 spec:
   interval: 1h
   url: https://stefanprodan.github.io/podinfo

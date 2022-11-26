@@ -1,0 +1,16 @@
+﻿apiVersion: traefik.containo.us/v1alpha1
+kind: IngressRoute
+metadata:
+  name: podinfo
+  namespace: apps-podinfo
+spec:
+  entryPoints:
+  - websecure
+  routes:
+  - match: Host(`podinfo.mircogericke.com`)
+    kind: Rule
+    services:
+    - name: podinfo
+      port: 9898
+  tls:
+    secretName: certificate-podinfo

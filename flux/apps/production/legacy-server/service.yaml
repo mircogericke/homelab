@@ -2,7 +2,7 @@
 kind: Service
 metadata:
   name: legacy-server
-  namespace: default
+  namespace: apps-legacy-server
 spec:
   type: ExternalName
   externalName: legacy.lan.mircogericke.com

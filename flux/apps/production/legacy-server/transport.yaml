@@ -2,6 +2,6 @@
 kind: ServersTransport
 metadata:
   name: legacy-server
-  namespace: default
+  namespace: apps-legacy-server
 spec:
   insecureSkipVerify: true

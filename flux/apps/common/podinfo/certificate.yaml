@@ -1,0 +1,13 @@
+﻿apiVersion: cert-manager.io/v1
+kind: Certificate
+metadata:
+  name: certificate-podinfo
+  namespace: apps-podinfo
+spec:
+  commonName: podinfo.mircogericke.com
+  dnsNames:
+  - podinfo.mircogericke.com
+  issuerRef:
+    name: cluster-issuer-letsencrypt
+    kind: ClusterIssuer
+  secretName: certificate-podinfo

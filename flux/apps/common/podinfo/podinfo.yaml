@@ -2,7 +2,7 @@
 kind: HelmRelease
 metadata:
   name: podinfo
-  namespace: default
+  namespace: apps-podinfo
 spec:
   interval: 1h
   chart:
@@ -15,3 +15,16 @@ spec:
       interval: 1h
       valuesFiles:
       - values.yaml
+  values:
+    host: podinfo.mircogericke.com
+    replicaCount: 1
+    resources:
+      limits:
+        memory: 256Mi
+      requests:
+        cpu: 100m
+        memory: 64Mi
+    hpa:
+      enabled: false
+    redis:
+      enabled: false
