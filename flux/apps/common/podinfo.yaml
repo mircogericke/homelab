@@ -16,5 +16,5 @@ spec:
     kind: GitRepository
     name: flux-system
     namespace: flux-system
-  path: ./flux/apps/production/podinfo
+  path: ./flux/apps/common/podinfo
   prune: true
