@@ -10,7 +10,7 @@ spec:
   - match: Host(`account.mircogericke.com`)
     kind: Rule
     services:
-    - name: http
+    - name: authentik
       namespace: apps-authentik
       port: http
   tls:
