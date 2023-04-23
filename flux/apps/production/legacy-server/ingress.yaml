@@ -7,7 +7,7 @@ spec:
   entryPoints:
   - websecure
   routes:
-  - match: Host(`nextdracool.com`, `www.nextdracool.com`, `git.nextdracool.com`, `media.nextdracool.com`, `cloud.nextdracool.com`)
+  - match: Host(`nextdracool.com`, `www.nextdracool.com`, `git.nextdracool.com`, `media.nextdracool.com`, `cloud.nextdracool.com`, `host.nextdracool.com`, `docker.nextdracool.com`, `monitoring.nextdracool.com`)
     kind: Rule
     services:
     - name: legacy-server
