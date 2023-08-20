@@ -1,0 +1,13 @@
+﻿apiVersion: cert-manager.io/v1
+kind: Certificate
+metadata:
+  name: certificate-immich
+  namespace: apps-immich
+spec:
+  commonName: photos.mircogericke.com
+  dnsNames:
+  - photos.mircogericke.com
+  issuerRef:
+    name: cluster-issuer-letsencrypt
+    kind: ClusterIssuer
+  secretName: certificate-immich
