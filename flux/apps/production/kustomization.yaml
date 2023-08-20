@@ -4,3 +4,4 @@ resources:
 - ../common
 - legacy-server.yaml
 - authentik.yaml
+- immich.yaml
