@@ -5,15 +5,15 @@ metadata:
     namespace: apps-immich
 type: Opaque
 stringData:
-    values.yaml: ENC[AES256_GCM,data:bEb2mlCoqwxjQGEztjOrPksMyRpmQN7JFTAu4lbQMMTzXIR7EYujXHoTcwW5QtxcQP/jfQgWm5CypWrHbUeNXS40vVYU3D8ibhnFyn8KpSf1GnwD5OcrPrgKYFEKnsJ8OF6GS38l6oxdwkgPkkMMR9NQvUtMEb/zTFS+I4sXNccE/uEqbFJqb0oyhs1Sc76z1333u3H3AsmXj/e8SPZbE1HM4HrfD1uLF/k7IXn7sKKLtnoBtCla0a5mr5yiFURbqqgovvYMv/UMznTI6EHto914nBAFotbG4wm/EdRFqulZg2Tuue3aO6vmyJCCkfQi0kOdR/Qqnyc567t0emjq23W4/QbDosGo3bgHVfnPW+YU7TG5eXUYcC+W5PFeEcJH+kSeOBMuMxv1ffLHlF1trUTt5dJWGC2/C0hc4P7YRFjVNOX1j4GSmQYWBGea7Dcbgq58DfF9QDfmj2PXJDhO93NomztP2zOpq7MMoqCLvyVy02uzd9etvHap7BkF3ZlKVYDaQjBNsB2z4PlyRpPOjx79iq+zSTXcumTW9f7BFY3LGe6llufF5aIUA3Q=,iv:UcHpjmFGfSMDjuLT0yTP0iCsjPAQq8AAgvohHhAfmvI=,tag:/PvcvVW2YlqCbb8w66pnDQ==,type:str]
+    values.yaml: ENC[AES256_GCM,data:vkqD0dQEg8B6Rm3fVPsZr9rVc1JFcv+Zn2zNulGirdEoJFtLJoOrDAbpARfPbtifp6ZTR+jGQA9aB9yKWJcPIcmro2xNFiBKcQbHppQKoH7y3XpRDPndmgmFBEvsYrUkEtE7sjbhJVyaYbztAjXuzOZqYdAYE0A5Ic8fb/DKZlKg7z/Sct7GSYLdJTPTawwHx3zH1ipAKVBn88RjM62ZoKWkj1RRYUvkpgkLeWoDIKHDaowB2TjdgUKAKvBlToasL8qjA/eAtcKDpnHfBnf4Eb3782rCxjEf/iSLtiWw9fy/Y7Iba0xpNuVTRaUb9aA76yhM5AfvQV974BfNxbp6KQWwOgBTtn9V6pug+XsvJx+UVQoiScDNtxPy+NKRV2F61FfeBL/TgIQRX5D3+i9QBfLICSNQyPn42VsBNj9j2+ZtJtuf3XgCdKkpBGZIxY15BYHk2/fTlomjOYJS6+eqR2pmnPpAK5/S8uvxy6UNygVrRPTueQDiP+h70pewrjjrsHPMNxmtI0LNw+l5pLAnPlRfl03QPr56wJp5eeEegx/L5RjmFnC7kZ3bvJJ64NmK46wz6Ewj0EydiPbi8tQ2+4GFDHwey2O2erTsAmrGvHD4vV6dcnQh2dlDQWstVkLuETgVQo9/s4ZXoPQnC8Om1Z/OOuEVw9QPtjhNXfT7wYbn/z/e/MPUGX894ajZMIH5ZijZAwLm4LZ3YKlS7aUkr3j64F9LwvL1S4L9kQQhv+ucRVLFkTy9pn4frYpUDDjT1s0cr3O+rE4rZmVuD2Dh0yJnYn5QNiJmUQOMrNnFVt3yqlDWsjyKICpRFZj0IucRiCr9j4EK1V3jQqetaxlbB13tFhTcRl1Mjdbt3ibMjiIvBKoqSWk=,iv:bFyjwUZWmA1GIE9l5iDVzZmHWnz5lN9j9O8No0cBAGw=,tag:v3CpksibP560gbmTK9ta5Q==,type:str]
 sops:
     kms: []
     gcp_kms: []
     azure_kv: []
     hc_vault: []
     age: []
-    lastmodified: "2023-08-20T09:15:58Z"
-    mac: ENC[AES256_GCM,data:wFgFUtxdAyHVEEWq4yf6q1l1yS1KbLLaKhHiEHYES3iDLh3K7E1kHy8SPwQ4OS/gHrBYph6k3PS9I/9DVLGPgVpcu8DHq7HbDh5/MQRmwGzsG4UNF9Y2NZsT0TD2/0B9oGfYzoymBwO5AdvBoa8DzZBCduRFH4QGQ5EyeHwqGKU=,iv:gBu8DAF/6POymuavRQ46rDYHTcM0MLkdPk0uze9lZX4=,tag:r21u9eLagMMI/LQlwHFcCQ==,type:str]
+    lastmodified: "2023-08-20T09:37:19Z"
+    mac: ENC[AES256_GCM,data:Yxfx4sUjiSZA2xg07pYB5qvePpDXk5saQS/7WsH4uWqo9AMqzFqI6tNi8/y581oqY05kTy9Uwte1FNdq/57dAkK/3p96T+jKWC68CdDDUiRowjyFaUw0Kz6qwHl7h9jquvhs+WKGLt/3gS9Guq7tKf5i9g8YRXUHiV6osuOyCxQ=,iv:u6GUyNurwqE16d+7eQ+Hk8hSQR3+qmIh68CDKeqyR9c=,tag:yaU689pIHtzx4eYEJcD06w==,type:str]
     pgp:
         - created_at: "2023-08-20T09:15:58Z"
           enc: |
