@@ -1,0 +1,17 @@
+﻿apiVersion: traefik.containo.us/v1alpha1
+kind: IngressRoute
+metadata:
+  name: immich
+  namespace: apps-immich
+spec:
+  entryPoints:
+  - websecure
+  routes:
+  - match: Host(`photos.mircogericke.com`)
+    kind: Rule
+    services:
+    - name: immich-proxy
+      namespace: apps-immich
+      port: http
+  tls:
+    secretName: certificate-immich
