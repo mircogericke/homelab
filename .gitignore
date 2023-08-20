@@ -4,3 +4,4 @@
 **/*.crt
 **/*.key
 **/generated
+.decrypted~*
