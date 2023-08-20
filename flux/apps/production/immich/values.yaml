@@ -5,15 +5,15 @@ metadata:
     namespace: apps-immich
 type: Opaque
 stringData:
-    values.yaml: ENC[AES256_GCM,data:vkqD0dQEg8B6Rm3fVPsZr9rVc1JFcv+Zn2zNulGirdEoJFtLJoOrDAbpARfPbtifp6ZTR+jGQA9aB9yKWJcPIcmro2xNFiBKcQbHppQKoH7y3XpRDPndmgmFBEvsYrUkEtE7sjbhJVyaYbztAjXuzOZqYdAYE0A5Ic8fb/DKZlKg7z/Sct7GSYLdJTPTawwHx3zH1ipAKVBn88RjM62ZoKWkj1RRYUvkpgkLeWoDIKHDaowB2TjdgUKAKvBlToasL8qjA/eAtcKDpnHfBnf4Eb3782rCxjEf/iSLtiWw9fy/Y7Iba0xpNuVTRaUb9aA76yhM5AfvQV974BfNxbp6KQWwOgBTtn9V6pug+XsvJx+UVQoiScDNtxPy+NKRV2F61FfeBL/TgIQRX5D3+i9QBfLICSNQyPn42VsBNj9j2+ZtJtuf3XgCdKkpBGZIxY15BYHk2/fTlomjOYJS6+eqR2pmnPpAK5/S8uvxy6UNygVrRPTueQDiP+h70pewrjjrsHPMNxmtI0LNw+l5pLAnPlRfl03QPr56wJp5eeEegx/L5RjmFnC7kZ3bvJJ64NmK46wz6Ewj0EydiPbi8tQ2+4GFDHwey2O2erTsAmrGvHD4vV6dcnQh2dlDQWstVkLuETgVQo9/s4ZXoPQnC8Om1Z/OOuEVw9QPtjhNXfT7wYbn/z/e/MPUGX894ajZMIH5ZijZAwLm4LZ3YKlS7aUkr3j64F9LwvL1S4L9kQQhv+ucRVLFkTy9pn4frYpUDDjT1s0cr3O+rE4rZmVuD2Dh0yJnYn5QNiJmUQOMrNnFVt3yqlDWsjyKICpRFZj0IucRiCr9j4EK1V3jQqetaxlbB13tFhTcRl1Mjdbt3ibMjiIvBKoqSWk=,iv:bFyjwUZWmA1GIE9l5iDVzZmHWnz5lN9j9O8No0cBAGw=,tag:v3CpksibP560gbmTK9ta5Q==,type:str]
+    values.yaml: ENC[AES256_GCM,data:ma/MSiuIVg0ISqjsP8AdPw23wu60ogdvMgNb+BiblvzNWNA9Zt2G0c4QlxQed1YT+623P1ZK0TCBd4LekvPyzLbwkME/GkmGJXP6ImXWOacLBqDoKcwSMz7t2qRXatcxIS5mDESprUAh8hX63e9Citniv4UfxlfeKnGG8jxscmCSo7xVD/aPOgAKjs9jux/L6oyz8x/qG7sSBRhqtkZ6gtapm6i6tqatlcUKp964/EittAL/E7EtFTuVatojO2zQs2rajvbRR6qOKaeDGLkbRqU6KHkc15anMuZNhHakn5oP3U+LkmTDSZF9pn/MPZODhTIcuA99z4h69kIWcqib47Cn8rziZE36x5HmoaUOman+uhMrhA3sxxj1902/A8VwXsnV2U3Q9/+EZ/1opLMP4ffa0KvDtQCOgwz9E5G+9+23fNgqHidwlqZNNC0PEzIsbsSyzKWgZFWXj2me2UMOpvf1EEX3ztujbh+HCWFuxzulHYHKLMfA/jO7vLp8g79PH6bLOLcsVl65Kb5WjVSW4pkOXnoE4O4LG/+fvRsHumYL6b3ibbk3iznpqYYOIVeClCBYux43OJRK8aJrPuHf46suWrfdRNxQ6L5gg2OTu5CahhlZdfx1nOCICJFZ1JRi1dvA/GvmOhJfpsGsp7L2YoZmtlriWQ5otL5nzD1ktqwf6JiT5tr/yBndeAQ+tw+BBrrC/zGPYwcqg2nvOcyQEkt11knHEufr+rp6qWHNNaOMuEGmJbV30lWjrUsGEEDVDdHHUbfevbe89TnEsjYCV5AzC8eXRpbNOH1JWuq7Xdrteoo/Hsn5WsYO3AYu6ywfLifFp8S5XYJEHhfEWcViEc6xbJNXo2nRetfR8wMCiPh/rA1cmnDV9dt4V/KxGc44nwIbF9KSpNoLPjK8/kxdW//zgSg13uJeUcYeTjSzqiyu7HSNZNuvFsusVTwliDxexIUGFeQxB/fzhotNZ1NucJvag/E=,iv:A2c19jz2rLOmLaUo3liApL9ZyKu4+D68kf/gNJXTzFw=,tag:m6T030crQSPUcdHLCBxwnA==,type:str]
 sops:
     kms: []
     gcp_kms: []
     azure_kv: []
     hc_vault: []
     age: []
-    lastmodified: "2023-08-20T09:37:19Z"
-    mac: ENC[AES256_GCM,data:Yxfx4sUjiSZA2xg07pYB5qvePpDXk5saQS/7WsH4uWqo9AMqzFqI6tNi8/y581oqY05kTy9Uwte1FNdq/57dAkK/3p96T+jKWC68CdDDUiRowjyFaUw0Kz6qwHl7h9jquvhs+WKGLt/3gS9Guq7tKf5i9g8YRXUHiV6osuOyCxQ=,iv:u6GUyNurwqE16d+7eQ+Hk8hSQR3+qmIh68CDKeqyR9c=,tag:yaU689pIHtzx4eYEJcD06w==,type:str]
+    lastmodified: "2023-08-20T09:48:04Z"
+    mac: ENC[AES256_GCM,data:sIirP4A5qC/Ybcmpaj4vktGtjrP1hoGl6NKNkm+hkcaImS2sAuSZhpP8YHcCwFe8mIlPEugu0ZToNvykmdNKwfUbFY11ichx/qt5XKpUWhxmwf7Si2cwiTjFvxjzDg8sWjkRfDtih4WUNCk/e1Pj2JaWcVntVdAZj2G5b6gWeZ4=,iv:qEvkbQztGtsDxY0XFoEzGp10kfTJv2P2ehcoAamJ5uE=,tag:Z6C81KrtC1nkppS+tJwulQ==,type:str]
     pgp:
         - created_at: "2023-08-20T09:15:58Z"
           enc: |
