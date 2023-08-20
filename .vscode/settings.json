@@ -3,5 +3,7 @@
 		"kustomization.yaml": "tree",
 		"certificate.yaml": "lock",
 		"ingress.yaml": "razor",
+		"volume.yaml": "database",
+		"values.yaml": "helm"
 	}
 }
